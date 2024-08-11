@@ -1,10 +1,10 @@
 ## Straico Python Scripts 🚀
 
-Welcome to the **Straico Python Scripts** repository! This is where we share and collaborate on handy Python scripts for the Straico community.  
+Welcome to the **Straico Python Scripts** repository! This is where I will share and collaborate on handy Python scripts for the Straico community.  
 
 **What is Straico?**
 
-[Straico](https://discord.gg/bZPKVNWX) is a vibrant Discord community passionate about [briefly describe what your community is about, e.g., data science, automation, game development]. 
+[Straico](https://discord.gg/bZPKVNWX) is an active Discord community passionate about all things AI. 
 
 **What you'll find here:**
 
@@ -14,7 +14,7 @@ This repository hosts a growing collection of Python scripts designed to simplif
 
 **Coming soon:**
 
-We're always working on new scripts! Stay tuned for upcoming additions. 
+I am always working on new scripts! Stay tuned for upcoming additions. 
 
 **Contributing:**
 
