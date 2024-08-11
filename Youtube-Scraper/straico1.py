@@ -8,7 +8,6 @@ load_dotenv()
 STRAICO_API_KEY = os.getenv('STRAICO_API_KEY')
 print(f"API Key: {STRAICO_API_KEY}")
 
-
 def make_api_request(url, headers, data):
     try:
         response = requests.post(url, headers=headers, json=data)
@@ -34,16 +33,20 @@ def main():
         "Content-Type": "application/json"
     }
 
+    youtube_url = "https://youtu.be/aiar6hl_dGA?si=7y5qFTU1jL5_gG23"
     data = {
         "models": ["openai/gpt-4o-mini"],
         "message": "what is the video about",
-        "youtube_urls": ["https://youtu.be/CKDEUrRaUfU?si=k9ioaoH4D5eI-5Go"],
+        "youtube_urls": [youtube_url],
         "display_transcripts": True
     }
 
     response_data = make_api_request(url, headers, data)
 
     if response_data:
+        # Add the YouTube URL to the response data
+        response_data['youtube_url'] = youtube_url
+
         # Generate a unique filename with timestamp
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
         filename = f"response_{timestamp}.json"
