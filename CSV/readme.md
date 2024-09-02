@@ -1,6 +1,3 @@
-Here's a `README.md` file tailored for the Python project you've provided. This README assumes the project is intended to interact with the Straico API, extract CSV content, and save it to a file.
-
-```markdown
 # Straico API CSV Extractor
 
 This Python script interacts with the Straico API, extracts CSV content from the API response, and saves it to a file. It is designed to handle the communication with the API, parse the response, validate the CSV format, and save the data locally.
@@ -25,7 +22,6 @@ This Python script interacts with the Straico API, extracts CSV content from the
 ```bash
 git clone <repository-url>
 cd <repository-name>
-```
 
 ### Set Up a Virtual Environment
 
