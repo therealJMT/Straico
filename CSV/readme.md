@@ -75,6 +75,3 @@ python main.py
 ## License
 
 This project is licensed under the MIT License.
-```
-
-Let me know if you would like me to add an MIT license file, and if so, provide the year and name it should be attributed to.
