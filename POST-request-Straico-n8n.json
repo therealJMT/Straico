@@ -1,0 +1,57 @@
+{
+  "meta": {
+    "templateId": "1466",
+    "instanceId": "872291b45dda5619e188e2b5d7080e0b2784981d04b860ad1396edfa1b7b2d40"
+  },
+  "nodes": [
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.straico.com/v0/file/upload",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "contentType": "multipart-form-data",
+        "bodyParameters": {
+          "parameters": [
+            {
+              "parameterType": "formBinaryData",
+              "name": "file",
+              "inputDataFieldName": "attachment_0"
+            }
+          ]
+        },
+        "options": {
+          "redirect": {
+            "redirect": {}
+          }
+        }
+      },
+      "id": "20bf2242-2c69-4f19-b1d7-0ae816ab79cc",
+      "name": "HTTP Request",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        860,
+        120
+      ],
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "54EoYbL1qcwJkr3V",
+          "name": "Straico API Key"
+        }
+      }
+    }
+  ],
+  "connections": {},
+  "pinData": {
+    "HTTP Request": [
+      {
+        "data": {
+          "url": "https://prompt-rack.s3.amazonaws.com/api/1723563011889_RE24368.pdf"
+        },
+        "success": true
+      }
+    ]
+  }
+}
